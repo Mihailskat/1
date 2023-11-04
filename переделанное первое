@@ -1,0 +1,11 @@
+A = [1, 2, 3, 4, 5]
+B = [3, 7, 9, 4, 8, 2, 3, 187]
+if len(A) > len(B):
+  while len(A) > len(B):
+    B.append(0)
+elif len(A) < len(B):
+  while len(A) < len(B):
+    A.append(0)
+
+N = list(map(lambda x, y: x+y, A, B))
+print(N)
